@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/media.css">
+    <title>LaslesVPN</title>
+</head>
+<body>
+    <!--SVG section start-->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 96.124 96.123">
+            <g>
+                <path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                    c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                    c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                    c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                    C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+        </symbol>
+        <symbol id="insta" viewBox="0 0 438.536 438.536">
+            <g>
+                <path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+                    C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+                    h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+                    C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+                    c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+                    c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+                    C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+                    c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+                    H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+                    c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+                    c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+                    c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+                    c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+                    c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+            </g>
+        </symbol>
+    </svg>
+    <!--SVG section end-->
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="/img/icons/Logo.svg" alt="LaslesVPN logo">
+                </a>
+            </div>
+            <div class="burger__menu" id="burger__menu" onclick="headerBurger()">
+                <span></span>
+            </div>
+            <nav class="header__nav" id="header__nav" onclick="headerBurger()">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#help">Help</a>
+            </nav>
+            <div class="header__sign-media" id="header__sign-media" onclick="headerMedia()">Sign</div>
+            <div class="header__sign" id="header__sign" onclick="headerMedia()">
+                <div class="arrow-up"></div>
+                <div class="header__sign-in"><a href="">Sign In</a></div>
+                <div class="header__sign-up"><a href="">Sign Up</a></div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="intro" id="about">
+                <div class="intro__top-row">
+                    <div class="intro__top-column intro__top-column1">
+                        <div class="intro__top-text">
+                            <h2 class="intro__top-title">
+                                Want anything to be easy with <span>LaslesVPN</span>.
+                            </h2>
+                            <div class="intro__top-subtitle">
+                                Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
+                            </div>
+                            <div class="intro__top-link">
+                                <a href="">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__top-column intro__top-column2">
+                        <div class="intro__top-img">
+                            <img src="/img/intro ill.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__bottom-row">
+                    <div class="intro__bottom-column intro__bottom-column1">
+                        <div class="intro__bottom-info">
+                            <div class="intro__bottom-icon">
+                                <img src="/img/icons/intro-icon1.svg" alt="">
+                            </div>
+                            <div class="intro__bottom-info-column">
+                                <div class="intro__bottom-number">90+</div>
+                                <div class="intro__bottom-text">Users</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hrline"></div>
+                    <div class="intro__bottom-column intro__bottom-column2">
+                        <div class="intro__bottom-info">
+                            <div class="intro__bottom-icon">
+                                <img src="/img/icons/intro-icon2.svg" alt="">
+                            </div>
+                            <div class="intro__bottom-info-column">
+                                <div class="intro__bottom-number">30+</div>
+                                <div class="intro__bottom-text">Locations</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hrline"></div>
+                    <div class="intro__bottom-column intro__bottom-column3">
+                        <div class="intro__bottom-info">
+                            <div class="intro__bottom-icon">
+                                <img src="/img/icons/intro-icon3.svg" alt="">
+                            </div>
+                            <div class="intro__bottom-info-column">
+                                <div class="intro__bottom-number">50+</div>
+                                <div class="intro__bottom-text">Servers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features" id="features">
+                <div class="features__row">
+                    <div class="features__column features__column1">
+                        <div class="features__img">
+                            <img src="/img/features ill.png" alt="">
+                        </div>
+                    </div>
+                    <div class="features__column features__column2">
+                        <div class="features__text">
+                            <h2 class="features__title">We Provide Many Features You Can Use</h2>
+                            <div class="features__subtitle">
+                                You can explore the features that we provide with fun and have their own functions each feature.
+                            </div>
+                            <ul class="features__list">
+                                <li>Powerfull online protection.</li>
+                                <li>Internet without borders.</li>
+                                <li>Supercharged VPN</li>
+                                <li>No specific time limits.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient-box">
+                <div class="pricing" id="pricing">
+                    <h2 class="pricing__title">Choose Your Plan</h2>
+                    <div class="pricing__subtitle">
+                        Let's choose the package that is best for you and explore it happily and cheerfully.
+                    </div>
+                    <div class="pricing__row">
+                        <div class="pricing__column">
+                            <div class="pricing__img">
+                                <img src="/img/plan-box.png" alt="">
+                            </div>
+                            <h3 class="pricing__inbox-title">Free Plan</h3>
+                            <ul class="pricing__list">
+                                <li>Unlimited Bandwitch</li>
+                                <li>Encrypted Connection</li>
+                                <li>No Traffic Logs</li>
+                                <li>Works on All Devices</li>
+                            </ul>
+                            <div class="pricing__price">Free</div>
+                            <div class="pricing__link">
+                                <a href="#">Select</a>
+                            </div>
+                        </div>
+                        <div class="pricing__column">
+                            <div class="pricing__img">
+                                <img src="/img/plan-box.png" alt="">
+                            </div>
+                            <h3 class="pricing__inbox-title">Standard Plan</h3>
+                            <ul class="pricing__list">
+                                <li>Unlimited Bandwitch</li>
+                                <li>Encrypted Connection</li>
+                                <li>Yes Traffic Logs</li>
+                                <li>Works on All Devices</li>
+                                <li>Connect Anyware</li>
+                            </ul>
+                            <div class="pricing__price">$9 <span>/ mo</span></div>
+                            <div class="pricing__link">
+                                <a href="#">Select</a>
+                            </div>
+                        </div>
+                        <div class="pricing__column">
+                            <div class="pricing__img">
+                                <img src="/img/plan-box.png" alt="">
+                            </div>
+                            <h3 class="pricing__inbox-title">Premium Plan</h3>
+                            <ul class="pricing__list">
+                                <li>Unlimited Bandwitch</li>
+                                <li>Encrypted Connection</li>
+                                <li>Yes Traffic Logs</li>
+                                <li>Works on All Devices</li>
+                                <li>Connect Anyware</li>
+                                <li>Get New Features</li>
+                            </ul>
+                            <div class="pricing__price">$12 <span>/ mo</span></div>
+                            <div class="pricing__link">
+                                <a href="#">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="network">
+                    <h2 class="network__title">Huge Global Network of Fast VPN</h2>
+                    <div class="network__subtitle">
+                        See LaslesVPN everywhere to make it easier for you when you move locations.
+                    </div>
+                    <div class="network__img">
+                        <img src="/img/Huge-global.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sponsored">
+                <div class="sponsored__row">
+                    <div class="sponsored__column sponsored__column1">
+                        <div class="sponsored__img">
+                            <img src="/img/netflix.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sponsored__column sponsored__column2">
+                        <div class="sponsored__img">
+                            <img src="/img/reddit.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sponsored__column sponsored__column3">
+                        <div class="sponsored__img">
+                            <img src="/img/amazon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sponsored__column sponsored__colum4">
+                        <div class="sponsored__img">
+                            <img src="/img/discord.png" alt="">
+                        </div>
+                    </div>
+                    <div class="sponsored__column sponsored__column5">
+                        <div class="sponsored__img">
+                            <img src="/img/spotify.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials" id="testimonials">
+                <div class="testimonials__inner">
+                    <h2 class="testimonials__title">Trusted by Thousands of Happy Customer</h2>
+                    <div class="testimonials__subtitle">
+                        These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+                    </div>
+                    <div class="testimonials__row">
+                        <div class="testimonials__column">
+                            <div class="testimonials__column-top">
+                                <div class="column-top-img">
+                                    <img src="/img/person1.png" alt="">
+                                </div>
+                                <div class="column-top-text">
+                                    <div class="top-text-name">Viezh Robert</div>
+                                    <div class="top-text-country">Warsaw, Poland</div>
+                                </div>
+                                <div class="column-top-rate">
+                                    <div class="top-rate-number">4.5</div>
+                                    <div class="top-rate-star"><img src="/img/icons/rate-star.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="testimonials__column-bottom">
+                                <div class="column-bottom-text">
+                                    “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__column">
+                            <div class="testimonials__column-top">
+                                <div class="column-top-img">
+                                    <img src="/img/person2.png" alt="">
+                                </div>
+                                <div class="column-top-text">
+                                    <div class="top-text-name">Yessica Christy</div>
+                                    <div class="top-text-country">Shanxi, China</div>
+                                </div>
+                                <div class="column-top-rate">
+                                    <div class="top-rate-number">4.5</div>
+                                    <div class="top-rate-star"><img src="/img/icons/rate-star.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="testimonials__column-bottom">
+                                <div class="column-bottom-text">
+                                    “I like it because I like to travel far and still can connect with high speed.”.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__column">
+                            <div class="testimonials__column-top">
+                                <div class="column-top-img">
+                                    <img src="/img/person3.png" alt="">
+                                </div>
+                                <div class="column-top-text">
+                                    <div class="top-text-name">Kim Young Jou</div>
+                                    <div class="top-text-country">Seoul, South Korea</div>
+                                </div>
+                                <div class="column-top-rate">
+                                    <div class="top-rate-number">4.5</div>
+                                    <div class="top-rate-star"><img src="/img/icons/rate-star.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="testimonials__column-bottom">
+                                <div class="column-bottom-text">
+                                    “This is very unusual for my business that currently requires a virtual private network that has high security.”.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__sub">
+                        <div class="testimonials__sub-row">
+                            <div class="testimonials__sub-column">
+                                <div class="testimonials__sub-text">
+                                    <h2 class="testimonials__sub-title">Subscribe Now for Get Special Features!</h2>
+                                    <div class="testimonials__sub-subtitle">Let's subscribe with us and find the fun.</div>
+                                </div>
+                            </div>
+                            <div class="testimonials__sub-column">
+                                <div class="testimonials__sub-link">
+                                    <a href="#">Subscribe Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer" id="help">
+            <div class="footer__row">
+                <div class="footer__column footer__column1">
+                    <div class="footer__logo">
+                        <img src="/img/icons/Logo.svg" alt="">
+                    </div>
+                    <div class="footer__feature">
+                        <span>LaslesVPN</span> is a private virtual network that has unique features and has high security.
+                    </div>
+                    <div class="footer__icons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg><use xlink:href="#facebook"></use></svg>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <svg><use xlink:href="#twitter"></use></svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg><use xlink:href="#insta"></use></svg>
+                        </a>
+                    </div>
+                    <div class="footer__copy">&copy2020LaslesVPN</div>
+                </div>
+                <div class="footer__column footer__column2">
+                    <h3 class="footer__title">Product</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">Download </a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Server</a></li>
+                        <li><a href="#">Countries</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column footer__column3">
+                    <h3 class="footer__title">Engage</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">LaslesVPN ?</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column footer__column4">
+                    <h3 class="footer__title">Earn Money</h3>
+                    <ul class="footer__links">
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Become Partner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
